@@ -14,7 +14,7 @@ const bot = mineflayer.createBot({
 console.log("starting chat listener...")
 bot.on('messagestr', (message, messagePosition, jsonMsg) => {
 	if (message.startsWith("[AD]") && message.toLowerCase().includes("/join "+config.server_name)) {
-		var msg = message.split("[AD] ").pop().split(": /join")[0]
+		var msg = message.split("] ").pop().split(": /join")[0]
 		client.channels.cache.get(config.discord_channel).send(msg)
 	}
 })
