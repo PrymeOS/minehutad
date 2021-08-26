@@ -1,3 +1,5 @@
+# WARNING: This is no longer allowed according to Minehut, so don't use it.
+
 # minehutad
 A discord.js bot that scrapes minehut chat for advertisment rewards.
 
